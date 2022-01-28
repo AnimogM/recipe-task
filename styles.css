@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+main {
+	width: 969px;
+	margin: 40px auto;
+}
+
+.title {
+	font-family: "Playfair Display", serif;
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+.description {
+	display: flex;
+	align-items: start;
+	gap: 10px;
+	padding: 15px 0;
+}
+
+.description p {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 18.07px;
+	font-style: italic;
+	width: 520px;
+}
+
+.description img {
+	padding-top: 4px;
+}
+
+.banner img {
+	width: 969px;
+	height: 450px;
+	border-radius: 12px;
+}
+.banner {
+	margin-top: 15px;
+}
+
+.content {
+	display: flex;
+	gap: 30px;
+	justify-content: space-between;
+}
+
+.left-side {
+	width: 68%;
+}
+
+.card {
+	width: 21%;
+	height: fit-content;
+	margin-top: 30px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	padding: 27px 37px;
+	border-radius: 10px;
+}
+
+.card-list {
+	display: flex;
+	gap: 10px;
+	padding-block: 17px;
+}
+
+.card-text h5 {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #bdbdbd;
+	line-height: 12px;
+}
+
+.card-text p {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.sub-title {
+	font-size: 24px;
+	padding-top: 25px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.name {
+	font-size: 18px;
+	font-style: italic;
+	padding-block: 28px;
+}
+
+.ordered-items, .unorder-items {
+	list-style: none;
+}
+
+.order {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	margin-top: 17px;
+}
+
+.space {
+	margin-top: 30px;
+}
+
+.num {
+	padding: 4px 8px;
+	color: #fff;
+	border-radius: 4px;
+	background: #f2994a;
+	font-weight: 700;
+}
+
+.order-text {
+	line-height: 24px;
+}
+
+.bolded {
+	font-weight: 700;
+}
+
+.italize {
+	font-style: italic;
+}
+
+.orange {
+	color: #f2994a;
+}
+
+footer {
+	text-align: center;
+	color: rgb(95, 93, 93);
+	padding: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        width: 94%;
+    }
+	.title {
+		font-size: 24px;
+	}
+	.description p {
+        width: 100%;
+	}
+    .banner img{
+        width: 100%;
+        height: auto;
+    }
+    .content{
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        box-shadow: none;
+        padding: 0;
+    }
+    .card-list{
+        gap: 5px;
+    }
+    .medium{
+        display: flex;
+        gap: 5px;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:321px) {
+
+    .card-list:first-of-type{
+        gap: 7px;
+    }
+    .card-list{
+        gap: 2px;
+    }
+}
